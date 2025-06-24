@@ -1,0 +1,23 @@
+<div
+  class="d-flex align-items-center justify-content-between step-review-form-block-1"
+>
+  <span class="text-1">{{ name }}</span>
+
+  <app-button
+    *ngIf="showShareButton"
+    iconLeft="../../../../../../../assets/icons/share-Blue.svg"
+    iconLeftHover="../../../../../../../assets/icons/share-Blue.svg"
+    type="secondary"
+    size="small"
+    (click)="clickButton('SHARE THIS PROPERTY'); showShareDialog()"
+    class="hide-mobile btn-share"
+    color="primary"
+    >SHARE THIS PROPERTY</app-button
+  >
+</div>
+
+<app-review-property-details
+  [showPropertyHeaderDetail]="showPropertyHeaderDetail"
+  #propertyDetails
+  [propertyData]="propertyData"
+></app-review-property-details>

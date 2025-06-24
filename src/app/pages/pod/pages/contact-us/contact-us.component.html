@@ -1,0 +1,43 @@
+<div class="d-flex flex-column block-1">
+  <span class="text-1">Thank You!</span>
+  <span class="text-2"
+    >for your interest in <strong>{{ propertyName }}</strong></span
+  >
+  <span class="text-3"
+    >Be the first to know! When this property is raedy to be listed the agent
+    will contact you.</span
+  >
+
+  <app-input-field
+    [formControl]="getControl('firstName')"
+    label="First Name"
+    theme="pod"
+  ></app-input-field>
+  <app-input-field
+    [formControl]="getControl('lastName')"
+    label="Last Name"
+    theme="pod"
+  ></app-input-field>
+  <app-input-field
+    [formControl]="getControl('phone')"
+    label="Phone Number"
+    theme="pod"
+  ></app-input-field>
+  <app-input-field
+    [formControl]="getControl('email')"
+    label="Email"
+    theme="pod"
+  ></app-input-field>
+
+  <app-button
+    iconLeft="../../../../../assets/icons/arrow-submit-White.svg"
+    iconLeftHover="../../../../../assets/icons/arrow-submit-White.svg"
+    type="primary"
+    size="large"
+    theme="pod"
+    color="primary"
+    class="btn-1"
+    (click)="submitForm()"
+    >SUBMIT</app-button
+  >
+</div>

@@ -1,0 +1,36 @@
+<div
+  class="d-flex align-items-center justify-content-between full-width hide-desktop show-tablet"
+>
+  <span class="text-1">{{ name }}</span>
+
+  <app-button
+    iconLeft="../../../../../../../assets/icons/share-Blue.svg"
+    iconLeftHover="../../../../../../../assets/icons/share-Blue.svg"
+    type="secondary"
+    size="small"
+    color="primary"
+    class="hide-mobile"
+    (click)="clickButton('SHARE THIS PROPERTY'); showShareDialog()"
+    >SHARE THIS PROPERTY</app-button
+  >
+</div>
+
+<app-summary-right
+  class="show-mobile hide-desktop"
+  [propertyData]="propertyData"
+></app-summary-right>
+<app-summary-top
+  class="show-tablet hide-desktop hide-mobile"
+  [propertyData]="propertyData"
+></app-summary-top>
+
+<app-step-review-form
+  [showPropertyHeaderDetail]="false"
+  [showShareButton]="true"
+  [propertyData]="propertyData"
+></app-step-review-form>
+
+<app-summary-right
+  class="hide-tablet"
+  [propertyData]="propertyData"
+></app-summary-right>

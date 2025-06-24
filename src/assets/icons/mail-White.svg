@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon / mail</title>
+    <defs>
+        <path d="M15.8333333,0 L2.5,0 C1.08333333,0 -3.55271368e-15,1.08333333 -3.55271368e-15,2.5 L-3.55271368e-15,12.5 C-3.55271368e-15,13.9166667 1.08333333,15 2.5,15 L15.8333333,15 C17.25,15 18.3333333,13.9166667 18.3333333,12.5 L18.3333333,2.5 C18.3333333,1.08333333 17.25,0 15.8333333,0 Z M2.5,1.66666667 L15.8333333,1.66666667 C16.1666667,1.66666667 16.4166667,1.83333333 16.5833333,2.16666667 L9.16666667,7.33333333 L1.75,2.16666667 C1.91666667,1.83333333 2.16666667,1.66666667 2.5,1.66666667 Z M15.8333333,13.3333333 L2.5,13.3333333 C2,13.3333333 1.66666667,13 1.66666667,12.5 L1.66666667,4.08333333 L8.66666667,9 C8.83333333,9.08333333 9,9.16666667 9.16666667,9.16666667 C9.33333333,9.16666667 9.5,9.08333333 9.66666667,9 L16.6666667,4.08333333 L16.6666667,12.5 C16.6666667,13 16.3333333,13.3333333 15.8333333,13.3333333 Z" id="path-1"></path>
+    </defs>
+    <g id="REX-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.1-View-POD" transform="translate(-1039.000000, -605.000000)">
+            <g id="Group-2-Copy" transform="translate(975.000000, 210.000000)">
+                <g id="email" transform="translate(40.000000, 383.000000)">
+                    <g id="icon-/-mail" transform="translate(24.833333, 12.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Icon-Color" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(-0.833333, -2.500000)" id="Shape">
+                                <rect x="0" y="0" width="20" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

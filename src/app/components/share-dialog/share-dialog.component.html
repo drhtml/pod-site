@@ -1,0 +1,45 @@
+<span class="text-1">{{ title }}</span>
+
+<div>
+  <share-button
+    [theme]="'modern-dark'"
+    button="facebook"
+    [showText]="true"
+    [url]="href"
+    (opened)="clickButton('FACEBOOK')"
+  ></share-button>
+  <share-button
+    [theme]="'modern-dark'"
+    button="twitter"
+    [showText]="true"
+    [url]="href"
+    (opened)="clickButton('TWITTER')"
+  ></share-button>
+  <share-button
+    [theme]="'modern-dark'"
+    button="linkedin"
+    [showText]="true"
+    [url]="href"
+    (opened)="clickButton('LINKED IN')"
+  ></share-button>
+  <share-button
+    [theme]="'modern-dark'"
+    button="reddit"
+    [showText]="true"
+    [url]="href"
+    (opened)="clickButton('REDDIT')"
+  ></share-button>
+  <share-button
+    [theme]="'modern-dark'"
+    button="telegram"
+    [showText]="true"
+    [url]="href"
+    (opened)="clickButton('TELEGRAM')"
+  ></share-button>
+</div>
+
+<div class="d-flex bottom">
+  <app-button type="secondary" size="small" class="btn-save" (click)="doNo()"
+    >CLOSE</app-button
+  >
+</div>

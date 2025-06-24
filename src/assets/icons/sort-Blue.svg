@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon / plus</title>
+    <defs>
+        <path d="M5.33333333,4.66666667 L5.33333333,11.3333333 C5.33333333,11.7333333 5.06666667,12 4.66666667,12 C4.26666667,12 4,11.7333333 4,11.3333333 L4,4.66666667 C4,4.26666667 4.26666667,4 4.66666667,4 C5.06666667,4 5.33333333,4.26666667 5.33333333,4.66666667 Z M8.66666667,0 C8.26666667,0 8,0.266666667 8,0.666666667 L8,11.3333333 C8,11.7333333 8.26666667,12 8.66666667,12 C9.06666667,12 9.33333333,11.7333333 9.33333333,11.3333333 L9.33333333,0.666666667 C9.33333333,0.266666667 9.06666667,0 8.66666667,0 Z M0.666666667,8 C0.266666667,8 -3.55271368e-15,8.26666667 -3.55271368e-15,8.66666667 L-3.55271368e-15,11.3333333 C-3.55271368e-15,11.7333333 0.266666667,12 0.666666667,12 C1.06666667,12 1.33333333,11.7333333 1.33333333,11.3333333 L1.33333333,8.66666667 C1.33333333,8.26666667 1.06666667,8 0.666666667,8 Z" id="path-1"></path>
+    </defs>
+    <g id="REX-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.1-View-POD" transform="translate(-735.000000, -3734.000000)">
+            <g id="Group-9" transform="translate(120.000000, 3675.000000)">
+                <g id="Padding-Group-3-Copy" transform="translate(597.000000, 48.000000)">
+                    <g id="icon-/-plus" transform="translate(24.000000, 16.000000) rotate(-90.000000) translate(-24.000000, -16.000000) translate(19.333333, 10.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#03A9F4" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Icon-Color" mask="url(#mask-2)" fill="#03A9F4">
+                            <g transform="translate(-3.333333, -2.000000)" id="Shape">
+                                <rect x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

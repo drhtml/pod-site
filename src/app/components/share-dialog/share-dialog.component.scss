@@ -1,0 +1,35 @@
+@import "../../../styles/includes";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.text-1 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  margin-top: 57px;
+
+  @include media-breakpoint-mobile-down {
+    margin-top: 50px;
+  }
+
+  app-button {
+    min-width: 120px;
+
+    & + app-button {
+      margin-left: 24px;
+    }
+  }
+}
+

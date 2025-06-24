@@ -1,0 +1,31 @@
+<span class="text-1">{{ price }}</span>
+<span class="text-2">
+  <strong>{{ text1 }}</strong>
+  <br /><br />
+  <strong>{{ text3 }}</strong>
+  <br /><br />
+  {{ text4 }}
+</span>
+
+<span class="text-3">Contact Agent for more about this property </span>
+
+<div class="d-flex justify-content-between bottom">
+  <app-button
+    [routerLink]="['/contact-us']"
+    iconLeft="../../../../../../assets/icons/mail-White.svg"
+    type="primary"
+    size="small"
+    [shouldIgnoreHover]="true"
+    (click)="clickButton('EMAIL')"
+    >EMAIL</app-button
+  >
+  <app-button
+    [routerLink]="['/contact-us']"
+    iconLeft="../../../../../../assets/icons/phone-White.svg"
+    type="primary"
+    size="small"
+    [shouldIgnoreHover]="true"
+    (click)="clickButton('CALL')"
+    >CALL</app-button
+  >
+</div>

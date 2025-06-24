@@ -1,0 +1,49 @@
+@import "../../../../../styles/includes";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 51px 15px 50px 15px;
+
+  @include media-breakpoint-tablet-down {
+    padding: 117px 15px 50px 15px;
+  }
+
+  @include media-breakpoint-tablet-down {
+    padding: 38px 15px 50px 15px;
+  }
+}
+
+.block-1 {
+  max-width: 388px;
+  width: 100%;
+}
+
+.text-1 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.text-3 {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+app-input-field {
+  margin-top: 16px;
+}
+
+.btn-1 {
+  margin-top: 25px;
+}

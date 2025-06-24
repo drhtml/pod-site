@@ -1,0 +1,83 @@
+@import "../styles/includes";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 87px 51px 0 120px;
+  min-height: 100%;
+
+  ::ng-deep {
+    :root {
+      --ColorPrimary: #03a9f4;
+    }
+  }
+
+  @include media-breakpoint-tablet-down {
+    padding: 87px 40px 0 40px;
+  }
+
+  @include media-breakpoint-mobile-down {
+    padding: 87px 18px 0 17px;
+  }
+}
+
+.block-1 {
+  position: fixed;
+  height: 87px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $PodBlueLight01;
+  padding-left: 39px;
+  z-index: 1;
+
+  .btn-home {
+    margin-right: 24px;
+  }
+
+  @include media-breakpoint-mobile-down {
+    height: 84px;
+    padding-left: 15px;
+  }
+
+  app-button {
+    align-self: flex-end;
+    margin-bottom: 6px;
+
+    @include media-breakpoint-mobile-down {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.block-2 {
+  display: flex;
+  background-color: $PodBlue;
+  border-radius: 0 0 16px 16px;
+  width: 148px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 62px;
+
+  @include media-breakpoint-mobile-down {
+    width: 80px;
+    height: 104px;
+    border-radius: 0 0 8px 8px;
+    margin-right: 22px;
+
+    img {
+      width: 54px;
+      height: 36px;
+    }
+  }
+}
+
+app-bottom-links {
+  margin: auto auto 13px 0;
+
+  @include media-breakpoint-mobile-down {
+    margin: auto auto 13px auto;
+  }
+}

@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+
+<div (window:beforeunload)="doBeforeUnload()" class="d-flex block-1">
+  <div class="block-2">
+    <img src="../../../assets/images/logo-pod.svg" alt="" />
+  </div>
+
+  <app-button
+    class="btn-home"
+    type="basic"
+    size="normal"
+    color=""
+    (click)="clickLink('HOME')"
+  >
+    HOME
+  </app-button>
+</div>
+
+<app-bottom-links theme="pod"></app-bottom-links>
