@@ -33,7 +33,7 @@
   z-index: 1;
 
   .btn-home {
-    margin-right: 24px;
+    margin-right: 24px; 
   }
 
   @include media-breakpoint-mobile-down {
@@ -43,7 +43,7 @@
 
   app-button {
     align-self: flex-end;
-    margin-bottom: 6px;
+    margin-bottom: 6px; 
 
     @include media-breakpoint-mobile-down {
       margin-bottom: 0;

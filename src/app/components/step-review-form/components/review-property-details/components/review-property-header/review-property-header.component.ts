@@ -18,6 +18,7 @@ export class ReviewPropertyHeaderComponent implements OnInit, OnChanges {
   location = '';
   description = '';
   price = '';
+  evaluationStatus = '';
   photos: IResponsePhotos[] = [];
   selectedPhoto?: IResponsePhotos;
 
@@ -34,7 +35,27 @@ export class ReviewPropertyHeaderComponent implements OnInit, OnChanges {
       const addressState = this.propertyData.houseFacts.address.state;
       const addressZip = this.propertyData.houseFacts.address.zipCode;
       this.location = `${addressHouseNumber} ${addressStreetName} ${addressCity}, ${addressState} ${addressZip}`;
-      this.price = formatPrice(this.propertyData.plan?.price || '');
+      const pricePoints = this.propertyData.plan?.pricePoints || [];
+      if (pricePoints.length > 0 && pricePoints[0].price) {
+        this.price = formatPrice(pricePoints[0].price.toString());
+      } else {
+        this.price = formatPrice(this.propertyData.plan?.price || '');
+      }
+      if (pricePoints.length > 0) {
+        const pricePoint = pricePoints[0];
+        const currentDate = new Date();
+        const startDate = new Date(pricePoint.startDate);
+        const endDate = new Date(pricePoint.endDate);
+        if (currentDate < startDate) {
+          this.evaluationStatus = 'Not Started';
+        } else if (currentDate > startDate && currentDate < endDate) {
+          this.evaluationStatus = 'In Progress';
+        } else {
+          this.evaluationStatus = 'Completed';
+        }
+      } else {
+        this.evaluationStatus = '';
+      }
       this.description = `${this.propertyData.interiorDetails.bedsAndBathrooms.beds} Bed • ${this.propertyData.interiorDetails.bedsAndBathrooms.fullBaths} Bath`;
       this.photos = _.filter(this.propertyData.photos, (item) => {
         return _.every(this.propertyData?.floorPlans, (floorPlan) => {

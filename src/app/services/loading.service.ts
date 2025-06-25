@@ -5,7 +5,7 @@ import { LoadingModalComponent } from '../components/loading-modal/loading-modal
 @Injectable({
   providedIn: 'root',
 })
-export class LoadingService {
+export class LoadingService { 
   private count = 0;
   private ref?: MatDialogRef<LoadingModalComponent>;
 
